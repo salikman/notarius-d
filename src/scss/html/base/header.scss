@@ -1,0 +1,21 @@
+.header {
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0;
+
+        a {
+            margin-bottom: 20px;
+            font-family: 'bickhamscripttwo', serif;
+            font-size: 48px;
+            line-height: 1.5;
+        }
+
+        span {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

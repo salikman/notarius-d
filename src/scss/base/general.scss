@@ -1,0 +1,108 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #FCFBF6 url('../img/bg.jpg') no-repeat top center;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    // line-height: 1.5
+}
+
+// font
+body {
+    color: $colorText;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main {
+    flex: 1
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    color: transparent;
+    image-rendering: auto;
+}
+
+article>*+* {
+    margin-top: 1em
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 940px;
+    width: 100%;
+}
+
+// lazyLoad
+.lazy-load {
+    position: relative;
+    padding: 0 0 90% 0;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// btn
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 10px 30px;
+    background-color: #696969;
+    color: white;
+    text-transform: uppercase;
+}
+
+// bg-white
+.bg-white {
+    background: #FCFBF6;
+}
+
+// padding
+.padding {
+    padding: 25px 0;
+}

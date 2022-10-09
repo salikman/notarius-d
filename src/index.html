@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Главная"
+})
+
+<body class="is-home">
+    @@include('html/base/header.html', {})
+
+    <main>
+        <div class="container">
+            <div class="bg-white">
+                @@include('html/sections/intro.html', {})
+                @@include('html/elements/menu.html', {})
+                <div class="padding"></div>
+                @@include('html/sections/block-text.html', {})
+                <div class="padding"></div>
+                @@include('html/sections/advantage.html', {})
+                <div class="padding"></div>
+                @@include('html/sections/gallery.html', {})
+                <div class="padding"></div>
+                @@include('html/sections/services.html', {})
+                <div class="padding"></div>
+                <!-- @@include('html/sections/slider.html', {}) -->
+            </div>
+        </div>
+    </main>
+
+    @@include('html/base/footer.html', {})
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My app -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>
