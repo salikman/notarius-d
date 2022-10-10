@@ -1,0 +1,27 @@
+.footer {
+    &__menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: #F9F4ED;
+
+        a {
+            display: block;
+            padding: 10px 15px;
+            border-width: 0 1px 0 0;
+            border-style: solid;
+            border-image: linear-gradient(180deg, rgba(black, 0) 0%, rgba(black, 0) 15%, rgba(black, 0.2) 50%, rgba(black, 0) 85%, rgba(black, 0) 100%) 1;
+            font-size: 18px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__text {
+        font-family: 'bickhamscripttwo', serif;
+        font-size: 38px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
