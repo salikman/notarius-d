@@ -5,6 +5,10 @@
         margin-bottom: 30px;
         background-color: #F9F4ED;
 
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+
         a {
             display: block;
             padding: 10px 15px;
@@ -12,6 +16,7 @@
             border-style: solid;
             border-image: linear-gradient(180deg, rgba(black, 0) 0%, rgba(black, 0) 15%, rgba(black, 0.2) 50%, rgba(black, 0) 85%, rgba(black, 0) 100%) 1;
             font-size: 18px;
+            text-align: center;
 
             &:hover {
                 text-decoration: underline;
@@ -23,5 +28,9 @@
         font-size: 38px;
         line-height: 1.5;
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
     }
 }

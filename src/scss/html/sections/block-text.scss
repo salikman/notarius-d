@@ -1,3 +1,7 @@
 .block-text {
     padding: 0 25px;
+
+    @media (max-width: 768px) {
+        padding: 0 10px;
+    }
 }

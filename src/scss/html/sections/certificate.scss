@@ -1,4 +1,8 @@
 .certificate {
+    @media (max-width: 768px) {
+        display: none;
+    }
+    
     &__title {
         margin-bottom: 40px;
         font-weight: 400;

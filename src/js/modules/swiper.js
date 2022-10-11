@@ -16,7 +16,7 @@ export function swiper() {
         },
     });
     const reviewsSlider = new Swiper(".reviews-slider", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -26,6 +26,16 @@ export function swiper() {
             delay: 2500,
             disableOnInteraction: false,
         },
+        breakpoints: {
+            475: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            }
+          },
     });
     const certificate = new Swiper(".certificate-slider", {
         loop: true, // <- causes issues combined with multi row setup!!

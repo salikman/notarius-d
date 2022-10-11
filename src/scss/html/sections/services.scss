@@ -10,6 +10,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 475px) {
+            grid-template-columns: auto;
+        }
     }
 
     .item {
@@ -59,6 +66,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 475px) {
+            flex-direction: column;
+
+            a {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__link {
