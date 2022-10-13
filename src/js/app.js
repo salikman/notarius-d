@@ -1,10 +1,12 @@
 import * as flsFunctions from "./modules/functions.js";
 import * as lazyLoad from "./modules/lazyload.js";
 import * as swiper from "./modules/swiper.js";
+import * as rating from "./modules/star-rating-svg.js";
 
 flsFunctions.isWebp();
 lazyLoad.lazyLoad();
 swiper.swiper();
+rating.rating();
 
 $(function() {
 	$('.header__collapse').on('click', () => {
@@ -53,4 +55,11 @@ $(function() {
     $(window).resize(function () {
         owlInitialize();
     });
+
+	$(".my-rating").starRating({
+		initialRating: 4,
+		strokeColor: '#894A00',
+		strokeWidth: 10,
+		starSize: 25
+	  });
 });

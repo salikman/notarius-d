@@ -1,0 +1,63 @@
+.modal {
+    display: none;
+    width: 100%;
+    max-width: 400px !important;
+
+    &-form {
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        &__box {
+            display: block;
+            margin-bottom: 20px;
+
+            input {
+                width: 100%;
+                height: 36px;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid #696969;
+                outline: none;
+
+                &::placeholder {
+                    color: #A9A9A9;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 93px;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid #696969;
+                outline: none;
+                resize: none;
+
+                &::placeholder {
+                    color: #A9A9A9;
+                }
+            }
+
+            button {
+                width: 100%;
+                margin-top: 30px;
+                border: none;
+            }
+        }
+
+        &__rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            span {
+                margin-right: 5px;
+            }
+        }
+    }
+}

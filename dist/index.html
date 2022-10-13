@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221011174012">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221013105130">
     <title>Главная</title>
 </head>
 
@@ -32,7 +32,7 @@
             <div class="intro__institution">Нотариус киев ЦЕНТР</div>
             <h1 class="intro__title">Деревянко Виктория</h1>
             <div class="intro__description">Все виды нотариальных услуг<br>в центре Киева</div>
-            <a href="#" class="intro__btn btn">Заказать услугу</a>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="intro__btn btn">Заказать услугу</a>
             <ul class="intro__list">
                 <li>
                     <svg><use href="img/icons/icons.svg#charm_map-pin"></use></svg>
@@ -175,7 +175,7 @@
     </div>
     <div class="services__btns">
         <a href="#" class="services__link">Все услуги</a>
-        <a href="#" class="services__btn btn">Заказать услугу</a>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="services__btn btn">Заказать услугу</a>
     </div>
 </div>
                 <div class="padding"></div>
@@ -292,7 +292,7 @@
             <div class="swiper-button-prev"><svg><use href="img/icons/icons.svg#left"></use></svg></div>
         </div>
     </div>
-    <a href="#" class="reviews__btn btn">Оставить отзыв</a>
+    <a data-fancybox data-src="#modal-review" href="javascript:;" class="reviews__btn btn">Оставить отзыв</a>
 </div>
                 <div class="padding"></div>
                 <div class="certificate">
@@ -480,20 +480,57 @@
     </nav>
     <div class="footer__text">Будем ради сотрудничать с Вами</div>
 </footer>
+    <div id="modal" class="modal">
+    <form action="" class="modal-form">
+        <h2 class="modal-form__title">Заказать услугу</h2>
+        <label for="" class="modal-form__box">
+            <input type="text" name="" id="" placeholder="Ваше имя">
+        </label>
+        <label for="" class="modal-form__box">
+            <input type="email" name="" id="" placeholder="Ел. почта">
+        </label>
+        <label for="" class="modal-form__box">
+            <button class="btn" type="submit">Заказать услугу</button>
+        </label>
+    </form>
+</div>
+<div id="modal-review" class="modal">
+    <form action="" class="modal-form">
+        <h2 class="modal-form__title">Оставить отзыв</h2>
+        <label for="" class="modal-form__box">
+            <input type="text" name="" id="" placeholder="Ваше имя">
+        </label>
+        <label for="" class="modal-form__box">
+            <input type="email" name="" id="" placeholder="Ел. почта">
+        </label>
+        <div class="modal-form__rating">
+            <span>Оцените наши услуги</span>
+            <div class="rating">
+                <div class="my-rating"></div>
+            </div>
+        </div>
+        <label for="" class="modal-form__box">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
+        </label>
+        <label for="" class="modal-form__box">
+            <button class="btn" type="submit">Заказать услугу</button>
+        </label>
+    </form>
+</div>
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221011174012" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20221013105130" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css?_v=20221011174012">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221011174012"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221011174012"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css?_v=20221013105130">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221013105130"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221013105130"></script>
     <!-- fancybox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20221011174012" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20221011174012" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20221013105130" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20221013105130" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- owlCarousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20221011174012" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?_v=20221011174012" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js?_v=20221013105130" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css?_v=20221013105130" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- My app -->
-    <script src="js/app.min.js?_v=20221011174012"></script>
+    <script src="js/app.min.js?_v=20221013105130"></script>
 </body>
 </html>

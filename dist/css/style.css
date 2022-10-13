@@ -1292,6 +1292,140 @@ select {
   line-height: 1.5;
 }
 
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 400px !important;
+}
+
+.modal-form__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.modal-form__box {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.modal-form__box input {
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #696969;
+  outline: none;
+}
+
+.modal-form__box input::-webkit-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box input::-moz-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box input:-ms-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box input::-ms-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box input::placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box textarea {
+  width: 100%;
+  height: 93px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #696969;
+  outline: none;
+  resize: none;
+}
+
+.modal-form__box textarea::-webkit-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box textarea::-moz-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box textarea:-ms-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box textarea::-ms-input-placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box textarea::placeholder {
+  color: #A9A9A9;
+}
+
+.modal-form__box button {
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+}
+
+.modal-form__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-form__rating span {
+  margin-right: 5px;
+}
+
+.jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+
+.jq-shadow {
+  -webkit-filter: drop-shadow(-2px -2px 2px #888);
+  filter: drop-shadow(-2px -2px 2px #888);
+}
+
 @media (min-width: 769px) {
   .header__collapse {
     display: none;
