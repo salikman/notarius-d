@@ -56,10 +56,19 @@ $(function() {
         owlInitialize();
     });
 
-	$(".my-rating").starRating({
-		initialRating: 4,
-		strokeColor: '#894A00',
-		strokeWidth: 10,
-		starSize: 25
-	  });
+	$(document).on('click','.modal .rating span' ,function () {
+		var $this = $(this);
+	
+		var $topParent = $this.closest('.modal-form__rating');
+		var $parent = $this.closest('.rating');
+		var $input = $($topParent.data('for'));
+	
+	
+		var $starElements = $parent.find('span');
+		$starElements.removeClass('checked');
+		var index = $($starElements).index($this)+1;
+		$starElements.slice(0,index).addClass('checked');
+	
+		$input.val(index);
+	});
 });

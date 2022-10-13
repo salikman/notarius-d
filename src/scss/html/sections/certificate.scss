@@ -1,12 +1,18 @@
 .certificate {
-    @media (max-width: 768px) {
-        display: none;
-    }
-    
     &__title {
         margin-bottom: 40px;
         font-weight: 400;
         text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .swiper {
