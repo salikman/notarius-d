@@ -22,6 +22,9 @@
         height: 100%;
         object-fit: cover;
     }
+    .swiper-button-next,.swiper-button-prev {
+        background-image: none;
+    }
 
     @media (max-width: 474px) {
         .swiper-button-next,
